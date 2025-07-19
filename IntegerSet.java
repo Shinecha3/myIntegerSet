@@ -19,8 +19,7 @@ public class IntegerSet {
 
 
     /**
-     * เพิ่มตัวเลขเข้าเซต
-     * @param integer ตัวเลขที่ต้องการเพิ่ม
+     * เช็คว่าทำตามกฎที่ตั้งไว้ไหม (RI)
      */
     private void checkRep(){
         for (int i = 0; i < num.size() - 1; i++) {
@@ -31,8 +30,8 @@ public class IntegerSet {
     }
 
     /**
-     * เพิ่มตัวเลขเข้าเซต
-     * @param integer ตัวเลขที่ต้องการเพิ่ม
+     * เพิ่มตัวเลขเข้าเซต ห้าม ว่าง และ ตัวเลขซ้ำกันจะไม่ถูกเพิ่ม
+     * @param x ตัวเลขที่ต้องการเพิ่ม
      */
     public void add(Integer x) {
         if (!num.contains(x) && num != null && x != null) {
